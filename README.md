@@ -16,12 +16,13 @@
 | Virtual-Piano  | Done   | [View](projects/Virtual-Piano) |
 | Memory Cards Game  | Done   | [View](projects/Memory-Card-Game/) |
 | Guess The Word  | Done   | [View](projects/Word-Guessing-Game//) |
+| Smart Search Playground  | in Progress ...   | [View](projects/smart-search-playground) |
 
 ## 🚀 Quick Start
 
 ```bash
 # Clone repository
-git clone https://github.com/arash-jj/JS-Mini-Projects.git
+git clone https://github.com/arash-jj/web-based-mini-projects.git
 ```
 
 ## 💡 How to Contribute
