@@ -1,4 +1,4 @@
-# JS-Mini-Projects 🎮
+# Web Based Mini Projects
 
 ## 🛠️ Projects
 
