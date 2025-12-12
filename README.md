@@ -16,7 +16,7 @@
 | Virtual-Piano  | Done   | [View](projects/Virtual-Piano) |
 | Memory Cards Game  | Done   | [View](projects/Memory-Card-Game/) |
 | Guess The Word  | Done   | [View](projects/Word-Guessing-Game//) |
-| Smart Search Playground  | in Progress ...   | [View](projects/smart-search-playground) |
+| Smart Search Playground  | done   | [View](projects/smart-search-playground) |
 
 ## 🚀 Quick Start
 
