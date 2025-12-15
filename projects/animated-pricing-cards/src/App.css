@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+#root {
+  max-width: 1400px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@theme {
+  --color-primary-white: #F5F5F7;
+  --color-primary-black: #1D1D1F;
+  --color-soft-gray: #D2D2D7;
+  --color-accent-blue: #0071E3;
+}
