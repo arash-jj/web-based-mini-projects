@@ -17,6 +17,7 @@
 | Memory Cards Game  | Done   | [View](projects/Memory-Card-Game/) |
 | Guess The Word  | Done   | [View](projects/Word-Guessing-Game//) |
 | Smart Search Playground  | done   | [View](projects/smart-search-playground) |
+| Animated Pricing Cards  | done   | [View](projects/animated-pricing-cards) |
 
 ## 🚀 Quick Start
 
