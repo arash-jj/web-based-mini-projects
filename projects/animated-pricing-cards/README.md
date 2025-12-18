@@ -1,73 +1,34 @@
-# React + TypeScript + Vite
+# 💳 Animated Pricing Cards
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, interactive pricing cards component with smooth animations and transitions.  Perfect for showcasing different service tiers or product plans with an engaging user experience.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Smooth Animations** - CSS animations and transitions for elegant interactions
+- **Responsive Design** - Works seamlessly across all device sizes
+- **Interactive Hover Effects** - Engaging card animations on user interaction
+- **Modern UI** - Clean and professional design with gradient accents
+- **Lightweight** - Minimal dependencies for fast loading
+- **Easy to Customize** - Simple structure for quick modifications
 
-## React Compiler
+## 💡 How It Works
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+### CSS Animations
+- **Card Hover Effect** - Smooth scale and shadow transitions
+- **Price Display** - Animated number reveals
+- **Button Interactions** - Elegant button hover states
+- **Gradient Backgrounds** - Modern gradient color schemes
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React**
+- **Tailwindcss**
+- **Motion**
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🎓 Tips for Improvement
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Experiment with different animation timings
+- Add smooth scroll effects
+- Implement dark mode toggle
+- Add parallax effects on scroll
+- Create variant designs for different industries
