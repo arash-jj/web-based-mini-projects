@@ -50,19 +50,20 @@ A comprehensive collection of **web-based mini projects** designed to help devel
 
 | # | Project | Type | Difficulty | Status | View |
 |---|---------|------|------------|--------|------|
-| 7 | **Animated Pricing Cards** | Component | Intermediate | ✅ | [→](projects/animated-pricing-cards) |
-| 8 | **Cars Showcase** | Gallery | Intermediate | ✅ | [→](projects/Cars) |
-| 9 | **Gradient Color Generator** | Tool | Beginner | ✅ | [→](projects/Gradient-Color-Generator) |
-| 10 | **Typing Animation** | Effect | Intermediate | ✅ | [→](projects/Text-Typing-Effect) |
+| 1 | **Animated Pricing Cards** | Component | Intermediate | ✅ | [→](projects/animated-pricing-cards) |
+| 2 | **Cars Showcase** | Gallery | Intermediate | ✅ | [→](projects/Cars) |
+| 3 | **Gradient Color Generator** | Tool | Beginner | ✅ | [→](projects/Gradient-Color-Generator) |
+| 4 | **Typing Animation** | Effect | Intermediate | ✅ | [→](projects/Text-Typing-Effect) |
 
 ### 🔧 Utility Projects
 
 | # | Project | Type | Difficulty | Status | View |
 |---|---------|------|------------|--------|------|
-| 11 | **Calculator** | Application | Beginner | ✅ | [→](projects/Calculator) |
-| 12 | **Palindrome Checker** | Tool | Beginner | ✅ | [→](projects/Palindrome-Checker) |
-| 13 | **Virtual Piano** | Interactive | Intermediate | ✅ | [→](projects/Virtual-Piano) |
-| 14 | **Smart Search Playground** | Advanced Tool | Advanced | ✅ | [→](projects/smart-search-playground) |
+| 1 | **Calculator** | Application | Beginner | ✅ | [→](projects/Calculator) |
+| 2 | **Palindrome Checker** | Tool | Beginner | ✅ | [→](projects/Palindrome-Checker) |
+| 3 | **Virtual Piano** | Interactive | Intermediate | ✅ | [→](projects/Virtual-Piano) |
+| 4 | **Smart Search Playground** | Advanced Tool | Advanced | ✅ | [→](projects/smart-search-playground) |
+| 5 | **State And Logic Engine** | Logic and State Controll | Intermediate | ✅ | [→](projects/state-and-logic-engine) |
 
 > **📌 To add a new project:** See [➕ Add New Project](#-add-new-project) section below
 
@@ -137,6 +138,7 @@ Build upon your fundamentals:
 5. **Cars Showcase** - Gallery & responsiveness
 6. **Animated Pricing Cards** - Advanced CSS & transitions
 7. **Guess The Word** - API integration & game logic
+7. **State And Logic Engine** - Logic and state control
 
 ### 🔴 Advanced Level
 Challenge yourself: 
