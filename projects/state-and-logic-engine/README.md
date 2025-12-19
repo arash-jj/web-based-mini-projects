@@ -1,73 +1,58 @@
-# React + TypeScript + Vite
+# 🔧 State & Logic Engine
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <a href="./public/state-and-logic-engine.png">
+    <img src="./public/state-and-logic-engine.PNG" alt="State & Logic Engine Preview" width="100%"/>
+  </a>
+</p>
 
-Currently, two official plugins are available:
+A small, focused React + TypeScript app that demonstrates a concise task state machine with blocking logic, progress visualization, and helpful statistics — built with Vite for fast feedback.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Highlights
+- Click a card to advance it through the states: To Do → In Progress → In Review → Done.
+- Block/unblock cards to prevent state transitions.
+- Live progress & blocked-percent indicators with animated bars.
+- Minimal, readable implementation designed for learning and extension.
 
-## React Compiler
+## ▶️ Quick Start
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```sh
+# filepath: projects/state-and-logic-engine/package.json
+# ...existing code...
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Open http://localhost:5173 (Vite default) and explore.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🛠️ How it works (quick overview)
+- State progression logic is implemented in [`moveCardToNextState`](projects/state-and-logic-engine/src/logic/taskmachine.ts).
+- Blocking rules are handled by [`toggleCardBlocked`](projects/state-and-logic-engine/src/logic/taskmachine.ts) and [`isCardBlocked`](projects/state-and-logic-engine/src/logic/taskmachine.ts).
+- The application uses `INITIAL_CARDS` and `CardState` from [`constants.ts`](projects/state-and-logic-engine/src/constants.ts) for initial data and configuration.
+- UI is composed in [`App.tsx`](projects/state-and-logic-engine/src/App.tsx) and rendered per-card by [`Card.tsx`](projects/state-and-logic-engine/src/components/Card.tsx).
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Key symbols:
+- [`moveCardToNextState`](projects/state-and-logic-engine/src/logic/taskmachine.ts) — advances a card's state
+- [`toggleCardBlocked`](projects/state-and-logic-engine/src/logic/taskmachine.ts) — toggles blocked flag on a card
+- [`isCardBlocked`](projects/state-and-logic-engine/src/logic/taskmachine.ts) — checks if card is blocked
+- [`INITIAL_CARDS`](projects/state-and-logic-engine/src/constants.ts) — seed data
+- [`CardState`](projects/state-and-logic-engine/src/constants.ts) — state enum & progression rules
+
+## 🏗️ Project Structure (important files)
+- [index.html](projects/state-and-logic-engine/index.html)
+- [package.json](projects/state-and-logic-engine/package.json)
+- [src/App.tsx](projects/state-and-logic-engine/src/App.tsx)
+- [src/components/Card.tsx](projects/state-and-logic-engine/src/components/Card.tsx)
+- [src/logic/taskmachine.ts](projects/state-and-logic-engine/src/logic/taskmachine.ts)
+- [src/constants.ts](projects/state-and-logic-engine/src/constants.ts)
+
+## ✅ Features & UX
+- Clean, readable UI with accessible controls
+- Progress and blocked metrics update in real-time
+- Simple API to extend with persistence or remote sync
+
+## 🧪 Extending / Contributing
+- Add persistence (localStorage or backend)
+- Add undo/redo for state changes
+- Add filtering/grouping of cards
+---
