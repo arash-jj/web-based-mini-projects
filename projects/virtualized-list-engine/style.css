@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper{
+    padding-inline: 40px;
+    height: 300px;
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+}
+.viewport{
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    position: relative;
+}
+.spacer{
+    width: 100%;
+    position: relative;
+}
+.list{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.item {
+    height: 40px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
