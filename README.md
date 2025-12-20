@@ -64,6 +64,7 @@ A comprehensive collection of **web-based mini projects** designed to help devel
 | 3 | **Virtual Piano** | Interactive | Intermediate | ✅ | [→](projects/Virtual-Piano) |
 | 4 | **Smart Search Playground** | Advanced Tool | Advanced | ✅ | [→](projects/smart-search-playground) |
 | 5 | **State And Logic Engine** | Logic and State Controll | Intermediate | ✅ | [→](projects/state-and-logic-engine) |
+| 5 | **Virtualized List Engine** | DOM Illusion | Intermediate | ✅ | [→](projects/virtualized-list-engine/) |
 
 > **📌 To add a new project:** See [➕ Add New Project](#-add-new-project) section below
 
@@ -139,6 +140,7 @@ Build upon your fundamentals:
 6. **Animated Pricing Cards** - Advanced CSS & transitions
 7. **Guess The Word** - API integration & game logic
 7. **State And Logic Engine** - Logic and state control
+7. **Virtualized List Engine** - DOM illusion
 
 ### 🔴 Advanced Level
 Challenge yourself: 
