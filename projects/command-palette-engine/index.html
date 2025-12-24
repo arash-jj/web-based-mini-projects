@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Command Palette Engine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="brand">Command Palette Engine</div>
+        <button id="open-palette" title="Open command palette">⌘ K</button>
+    </header>
+    <main class="content">
+        <h1>Command Palette Demo</h1>
+        <p class="hint">Press <kbd>Ctrl</kbd>/<kbd>⌘</kbd> + <kbd>K</kbd> to open the palette.</p>
+    </main>
+    <div id="palette" class="palette" aria-hidden="true">
+        <div class="palette-panel" role="dialog" aria-label="Command palette">
+            <input id="palette-input" class="palette-input" placeholder="Type a command..." aria-label="Type a command" autocomplete="off" />
+            <ul id="palette-results" class="palette-results" role="listbox" tabindex="0"></ul>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
