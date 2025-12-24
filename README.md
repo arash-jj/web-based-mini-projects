@@ -63,10 +63,11 @@ A comprehensive collection of **web-based mini projects** designed to help devel
 | 2 | **Palindrome Checker** | Tool | Beginner | ✅ | [→](projects/Palindrome-Checker) |
 | 3 | **Virtual Piano** | Interactive | Intermediate | ✅ | [→](projects/Virtual-Piano) |
 | 4 | **Smart Search Playground** | Advanced Tool | Advanced | ✅ | [→](projects/smart-search-playground) |
-| 5 | **State And Logic Engine** | Logic and State Controll | Intermediate | ✅ | [→](projects/state-and-logic-engine) |
+| 5 | **State And Logic Engine** | Logic and State Control | Intermediate | ✅ | [→](projects/state-and-logic-engine) |
 | 6 | **Virtualized List Engine** | DOM Illusion | Intermediate | ✅ | [→](projects/virtualized-list-engine/) |
-| 7 | **Search Query Engine** | DOM Illusion | Intermediate | ✅ | [→](projects/search-query-engine/) |
-| 8 | **Undo and Redo Engine** | DOM Illusion | Intermediate | ✅ | [→](projects/redo-undo-engine/) |
+| 7 | **Search Query Engine** | Engine | Intermediate | ✅ | [→](projects/search-query-engine/) |
+| 8 | **Undo and Redo Engine** | Engine| Intermediate | ✅ | [→](projects/redo-undo-engine/) |
+| 9 | **Command Palette Engine** | Engine and UI | Intermediate | ✅ | [→](projects/command-palette-engine/) |
 
 > **📌 To add a new project:** See [➕ Add New Project](#-add-new-project) section below
 
@@ -150,6 +151,7 @@ Build upon your fundamentals:
 Challenge yourself: 
 
 1. **Smart Search Playground** - Complex algorithms & performance
+2. **Command Palette Engine** - Complex algorithms & performance
 
 ---
 
