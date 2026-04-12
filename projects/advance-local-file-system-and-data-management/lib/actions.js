@@ -61,8 +61,9 @@ function scoreItem(item, tokens) {
     });
     return score;
 }
-export const searchProjects = async (query) => {
-    const tokens = tokenize(query);
+export const searchProjects = async () => {
+    const searchQ = await ask("You'r looking for ? ")
+    const tokens = tokenize(searchQ);
     const db = await loadDB();
     const results = db
     if (results.length === 0) console.log("NO MATCH FOUND !")
@@ -74,5 +75,4 @@ export const searchProjects = async (query) => {
     .sort((a, b) => b.score - a.score)
     .map(result => result.item);
     console.log(results);
-    
 }

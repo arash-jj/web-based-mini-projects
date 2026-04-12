@@ -1,24 +1,29 @@
 #!/usr/bin/env node 
 import { addProjects, listProjects, searchProjects } from './lib/actions.js';
+import { selectMenu, titleScreen } from './lib/ui.js';
 const args = process.argv.slice(2);
 const command = args[0];
 
 const main = async () => {
-    switch (command) {
-        case "add":
-            await addProjects();
+    await titleScreen();
+    const choice = await selectMenu("what do you want to do ?", [
+        "Add New Project",
+        "List All Projects",
+        "Find Specific Projects",
+        "Exit"
+    ]);
+    switch (choice) {
+        case "Add New Project":
+            addProjects()
             break;
-        case "list":
-            await listProjects();
+        case "List All Projects":
+            listProjects()
             break;
-        case "search":
-            await searchProjects(args[1]);
+        case "Find Specific Projects":
+            searchProjects()
             break;
         default:
-            console.log("Usage:");
-            console.log(" node index.js add");
-            console.log(" node index.js list");
-            console.log(" node index.js search <keyword>");
+            process.exit(1)
             break;
     }
 }
