@@ -66,7 +66,10 @@ export const searchProjects = async () => {
     const tokens = tokenize(searchQ);
     const db = await loadDB();
     const results = db
-    if (results.length === 0) console.log("NO MATCH FOUND !")
+    if (results.length === 0) {
+        console.log("NO MATCH FOUND !")
+        return
+    }
     db.map(item => ({
         item,
         score: scoreItem(item, tokens)
@@ -74,5 +77,5 @@ export const searchProjects = async () => {
     .filter(result => result.score > 0)
     .sort((a, b) => b.score - a.score)
     .map(result => result.item);
-    console.log(results);
+    results.forEach(p => console.log(`- ${p.name} (${(p.tech ?? []).join(', ')})`));
 }

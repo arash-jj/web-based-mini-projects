@@ -14,18 +14,22 @@ const main = async () => {
     ]);
     switch (choice) {
         case "Add New Project":
-            addProjects()
+            await addProjects()
             break;
         case "List All Projects":
-            listProjects()
+            await listProjects()
             break;
         case "Find Specific Projects":
-            searchProjects()
+            await searchProjects()
             break;
+        case "Exit":
+            process.exit(1)
         default:
             process.exit(1)
-            break;
     }
 }
 
-main();
+main().catch(err => {
+    console.error(err);
+    process.exit(1)
+});

@@ -1,5 +1,3 @@
-// ⠇⠦ ⠇⠦⠴ ⠦ ⠙ ⠴ ⠇⠇⠇⠇⠙⠸⠙⠇⠦⠹⠏⠋
-import { title } from 'process';
 import readline from 'readline';
 
 export const colors = {
