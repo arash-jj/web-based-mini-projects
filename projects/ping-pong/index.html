@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping Pong</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        :root {
+            color-scheme: dark;
+        }
+        canvas {
+            border: 1px white solid;
+            display: block;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+        h2 {
+            font-size: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 id="p1s"></h2>
+        <canvas id="canvas" width="500" height="512"></canvas>
+        <h2 id="p2s"></h2>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
