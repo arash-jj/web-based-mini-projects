@@ -45,6 +45,7 @@ A comprehensive collection of **web-based mini projects** designed to help devel
 | 4 | **Rock Paper Scissors** | Casual Game | Beginner | ✅ | [→](projects/Rock-Paper-Scissors) |
 | 5 | **Guess The Word** | Word Game | Intermediate | ✅ | [→](projects/Word-Guessing-Game) |
 | 6 | **Memory Cards Game** | Puzzle Game | Beginner | ✅ | [→](projects/Memory-Card-Game) |
+| 7 | **Ping Pong** | Puzzle Game | Beginner | ✅ | [→](projects/ping-pong) |
 
 ### 🎨 UI/UX Projects
 
@@ -68,6 +69,7 @@ A comprehensive collection of **web-based mini projects** designed to help devel
 | 7 | **Search Query Engine** | Engine | Intermediate | ✅ | [→](projects/search-query-engine/) |
 | 8 | **Undo and Redo Engine** | Engine| Intermediate | ✅ | [→](projects/redo-undo-engine/) |
 | 9 | **Command Palette Engine** | Engine and UI | Intermediate | ✅ | [→](projects/command-palette-engine/) |
+| 9 | **Advance local file system and data management** | CLI | Intermediate | ✅ | [→](projects/advance-local-file-system-and-data-management) |
 
 > **📌 To add a new project:** See [➕ Add New Project](#-add-new-project) section below
 
@@ -78,7 +80,7 @@ A comprehensive collection of **web-based mini projects** designed to help devel
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/arash-jj/web-based-mini-projects.git
+git clone <Repo URL>
 cd web-based-mini-projects
 ```
 
@@ -111,12 +113,6 @@ Most projects work immediately in your browser.  No npm packages or build tools 
 - **Motion**
 - **Tailwindcss**
 - **Vite**
-
-**Language Composition:**
-- 🟡 **JavaScript** - 47.7% (Core logic & interactivity)
-- 🔵 **HTML** - 19.7% (Structure & markup)
-- 🎨 **CSS** - 18.3% (Styling & animations)
-- 💜 **TypeScript** - 14.3% (Type-safe development)
 
 ---
 
