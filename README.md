@@ -147,7 +147,7 @@ Build upon your fundamentals:
 Challenge yourself: 
 
 1. **Smart Search Playground** - Complex algorithms & performance
-2. **Command Palette Engine** - Complex algorithms & performance
+2. **Command Palette Engine** - Complex algorithms
 
 ---
 
@@ -295,25 +295,6 @@ Then open a Pull Request with details about your project!
 
 ---
 
-## 📊 Project Statistics
-
-```
-Total Projects:        14
-Beginner Level:        6
-Intermediate Level:    7
-Advanced Level:        1
-
-Languages Used:
-- JavaScript:    47.7%
-- HTML:           19.7%
-- CSS:           18.3%
-- TypeScript:   14.3%
-
-Status:  All Projects Complete ✅
-```
-
----
-
 ## 🎓 What You'll Learn
 
 - 🎯 **DOM Manipulation** - JavaScript & the browser API
@@ -324,6 +305,7 @@ Status:  All Projects Complete ✅
 - ⚡ **Performance Optimization** - Efficient code practices
 - 🧪 **Debugging Skills** - Finding and fixing issues
 - 📋 **Code Organization** - Clean architecture patterns
+- 💻 **Tools** - Cli usefull tools built with Node.js
 
 ---
 
